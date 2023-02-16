@@ -1,0 +1,458 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;400&display=swap');
+
+
+
+/* MOBILE FIRST
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/* BASE STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;  /*scrooll mas suave al navegar por la pagina */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h1 {font-size: 2em; font-weight: 200;}
+h2 {font-size: 1.8em; font-weight: 200;}
+h3 {font-size: 1.4em; font-weight: 200;}
+p {font-size: 1.1em; font-weight: 200;}
+li {
+    font-size: 1.4em;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: #FFA500;
+}
+
+
+/* button {
+    padding: .6rem 1rem;
+    border: 1px solid #995309;
+    border-radius: 4px;
+    background-color: #d9750b;
+    color: #fff;
+    font-size: 1.2rem;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
+        0 1px 3px rgba(0,0,0,.2);
+    background-image: linear-gradient(#f90 10%,#e76a00 100%);
+}
+
+button:hover, button:focus {
+    background-color: #e0811b;
+    background-image: linear-gradient(#f0a100 10%,#f70 100%);
+    cursor: pointer;
+  }
+  
+button:active {
+    background-color: #cf6a00;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+    background-image: linear-gradient(#f0a100 10%,#f70 100%);
+  } */
+
+/* CONTAINER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wrapper { 
+    width: 100%;
+    height: 100vh;
+}
+
+/* CONTAINER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 30px; /*espaciado entre items*/
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 0px 10px 0px;
+}
+
+.menu__item {
+    padding: 0px 20px 0px 0px;
+}
+
+
+.menu__logo {
+    color: black;
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.menu__logo > a:visited {
+    color: black;;
+}
+
+.bt-acceso {
+    background-color: #FFA500;
+    font-weight: bold;
+    width: 280px;
+    height: 60px;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.bt-acceso:hover {
+    background: linear-gradient(180deg, #fbde74 0%, #ff9900 100%);
+    transition: all .3s;
+}
+
+/* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* BANNER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.banner {
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/portada-min.jpg) no-repeat center / cover;
+    min-height: 350px;
+    margin-top: 35px;
+    color: white;
+ 
+}
+
+
+.banner__title {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+}
+
+
+.banner__text {
+    width: 90%;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-60%, -60%); 
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+/* BANNER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* MAIN ARTICLE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.main__header {
+    text-align: center;;
+    padding: 60px 0px 30px 0px;
+}
+
+.container-main {
+    align-items: stretch;
+    background-color: black;
+    color: white;
+    padding: 40px 30px 50px 30px;
+}
+
+.column {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.column--1 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(../img/clase-fit-min.jpg) no-repeat center / cover;
+}
+
+.column--2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(../img/clase-crosffit-min.jpg) no-repeat center / cover;
+}
+
+.column--3 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(../img/clase-musculacion-min.jpg) no-repeat center / cover;
+}
+
+.column--4 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(../img/clase-fuerza-min.jpg) no-repeat center / cover;
+}
+
+
+.column__title {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+}
+
+.column__content {
+    position: absolute;
+    width: 90%;
+    top: 60%;
+    left: 60%;
+    transform: translate(-60%, -60%); 
+    text-align: center;
+}
+
+
+/* MAIN ARTICLE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/* SECIÓN SECUNDARIA
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+section {
+    min-height: 350px;
+
+}
+
+section p:first-child {
+    margin-top: 70px;
+    font-size: 1em;
+}
+
+section p {
+    text-align: center;
+    margin: 30px;
+    line-height: 2em;
+}
+
+
+/* SECIÓN SECUNDARIA
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* PAGE ASIDE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.page-aside {
+    position: relative;
+    min-height: 250px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/aside-min.jpg) no-repeat center / cover;
+    color: white;
+}
+
+.page-aside__content { 
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+}
+
+
+.page-aside__author {
+    position: absolute;
+    width: 70%;
+    top: 80%;
+    left: 55%;
+    transform: translate(-55%, -80%); 
+    text-align: center;
+    font-size: 1em;
+}
+
+
+/* PAGE ASIDE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* PAGE FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+    background-color: black;
+    color: white;
+}
+
+
+.page-footer__container {
+    align-items: flex-start;
+    padding: 20px;
+    row-gap: 0;
+}
+
+.page-footer__title {
+    margin: 40px 0px 40px 0px;
+}
+
+.container--fab {
+    flex-direction: row;
+}
+
+.fab {
+    font-size: 1.6em;
+    margin: 20px 20px 0px 0px;
+    cursor: pointer;
+}
+
+
+.bt-acceso--footer {
+    margin: 0px 0px 40px 18px;
+    width: 180px;
+}
+
+/* PAGE FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/* MEDIA QUERYS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Tablet portrait (768x1024) */
+@media screen and (min-width: 768px) {
+    
+    .row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: space-evenly;
+    }
+
+    .column {
+        width: 100%;
+        height: 400px;
+    }
+
+    .container-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+       
+       margin-top: 40px;
+    }
+
+    .menu__logo {
+        margin-left: 30px;
+        
+    }
+
+    .banner {
+        height: 650px;
+    }
+
+    .banner__title {
+        font-size: 3.5em;
+    }
+
+    .banner__text {
+        font-size: 1.6em;
+    }
+
+    .main__header {
+        font-size: 2.6em;
+    }
+
+    section {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    section p:first-child {
+        font-size: 1.2em;
+    }
+    
+    section p {
+        font-size: 1.6em;
+    }
+
+    .page-aside {
+        min-height: 500px;
+    }
+    
+    .page-aside__content { 
+        font-size: 2.5em;
+    }
+    
+    .page-aside__author {
+        font-size: 1.2em;
+    }
+
+}
+
+
+/*Tablet landscape (1024x768)*/
+
+@media screen and (min-width: 1300px) {
+
+    .column {
+        width: 600px;
+        height: 500px;
+    }
+
+    .page-aside__content { 
+        font-size: 3.5em;
+    }
+}
+
+
+
+@media screen and (min-width:1600px) {
+
+    .column {
+        width: 900px;
+        height: 600px;
+    }
+}
+
+
+
+
+/* MEDIA QUERYS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
