@@ -53,30 +53,7 @@ a:hover {
 }
 
 
-/* button {
-    padding: .6rem 1rem;
-    border: 1px solid #995309;
-    border-radius: 4px;
-    background-color: #d9750b;
-    color: #fff;
-    font-size: 1.2rem;
-    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
-        0 1px 3px rgba(0,0,0,.2);
-    background-image: linear-gradient(#f90 10%,#e76a00 100%);
-}
 
-button:hover, button:focus {
-    background-color: #e0811b;
-    background-image: linear-gradient(#f0a100 10%,#f70 100%);
-    cursor: pointer;
-  }
-  
-button:active {
-    background-color: #cf6a00;
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
-    background-image: linear-gradient(#f0a100 10%,#f70 100%);
-  } */
 
 /* CONTAINER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
