@@ -54,7 +54,6 @@ a:hover {
 
 
 
-
 /* CONTAINER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .wrapper { 
@@ -180,6 +179,7 @@ a:hover {
     height: 350px;
     margin-bottom: 40px;
     position: relative;
+    border-radius: 10px;
 }
 
 .column--1 {
